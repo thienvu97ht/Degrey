@@ -1,18 +1,3 @@
-window.onscroll = function () {
-  showProduct();
-};
-
-function showProduct() {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-    document
-      .getElementById("header__navbar-scroll")
-      .classList.add("scroll__change-color");
-  } else {
-    document
-      .getElementById("header__navbar-scroll")
-      .classList.remove("scroll__change-color");
-  }
-}
 
 /* Jquery*/
 $(document).ready(function () {
