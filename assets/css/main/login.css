@@ -1,0 +1,69 @@
+.log-in-sign-up-container {
+  margin-top: 100px;
+}
+
+.login-socia-network {
+    padding: 40px 0;
+}
+
+.login-socia-title {
+  color: rgb(92, 91, 91);
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.btn-socialoginfb {
+  background: #546ea6
+    url(//theme.hstatic.net/200000031420/1000527863/14/facebook.png?v=381)
+    no-repeat 0 center;
+}
+
+.btn-socialogingg {
+  background: #df5656
+    url(//theme.hstatic.net/200000031420/1000527863/14/googleplus.png?v=381)
+    no-repeat 0 center;
+}
+
+.text-center .btn-socialoginfb,
+.text-center .btn-socialogingg {
+  margin: 0 5px;
+  padding-right: 10px;
+  text-indent: 30px;
+  line-height: 24px;
+  border-radius: 12px;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.btn-socialoginfb:hover,
+.btn-socialogingg:hover {
+  cursor: pointer;
+  filter: alpha(opacity=60);
+  -khtml-opacity: 0.6;
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  transition: ease-in 0.2s;
+}
+
+.line-or {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.liner-or-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -13px;
+  background: #fff;
+  display: inline-block;
+  padding: 5px;
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}

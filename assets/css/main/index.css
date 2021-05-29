@@ -1,0 +1,206 @@
+/* Slide container */
+.slide-container {
+  top: 90px;
+}
+
+.header__slider-img {
+  height: 800px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 100% 10%;
+}
+
+.owl-dots {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+}
+
+/* Container trending */
+
+.container__trending {
+  margin-top: 140px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.app__container-title {
+  text-align: center;
+  font-size: 3.4rem;
+  padding-bottom: 36px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.container__trending-item {
+  width: 100%;
+  height: 268px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  transform: translateY(0px);
+  transition: all ease 0.3s;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.container__trending-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.container__trending-img:hover {
+  transform: rotateY(180deg);
+}
+
+.container__trending-img1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.container__trending-img2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transform: rotateY(180deg);
+}
+
+.icon-eye,
+.icon-bag {
+  position: absolute;
+  right: -30px;
+  font-size: 2rem;
+  color: rgb(104, 102, 102);
+  opacity: 0.3;
+  padding: 10px;
+}
+
+.icon-eye {
+  transition: ease-in 0.2s;
+}
+
+.icon-bag {
+  transition: ease-in 0.3s;
+  top: 40px;
+}
+
+.icon-eye:hover, .icon-bag:hover {
+  color: #000;
+}
+
+.container__trending-item:hover .icon-eye {
+  transform: translateX(-40px);
+  transition: ease-in 0.2s;
+  opacity: 1;
+}
+
+.container__trending-item:hover .icon-bag {
+  transform: translateX(-40px);
+  transition: ease-in 0.3s;
+  opacity: 1;
+}
+
+/* Product */
+
+.product-name {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.product-price {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.currency-unit {
+  text-decoration: underline;
+}
+
+/* Tin tức */
+.container__product-item {
+}
+
+.news-content {
+  margin: 20px 0;
+}
+
+.news-item-img {
+  cursor: pointer;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.news-title {
+  cursor: pointer;
+  line-height: 2.8rem;
+}
+
+.news-upload-info {
+  display: flex;
+}
+
+.news-upload-info {
+  font-size: 1.4rem;
+}
+
+.news-author {
+  color: #bda47d;
+  margin-left: 15px;
+  position: relative;
+}
+
+.news-author::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 1px solid #000;
+  width: 1px;
+  height: 16px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.news-upload-date {
+  margin-left: 30px;
+  margin-right: 15px;
+}
+
+.news-text-content {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.load-more-news {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  width: 116px;
+  height: 48px;
+  background-color: #000;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 48px;
+}

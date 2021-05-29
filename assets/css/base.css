@@ -1,16 +1,27 @@
 :root {
-    --white-color: #fff;
-    --black-color: #000;
-    --text-color: #767976;
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #767976;
 }
 
 * {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
-    line-height: 1.6rem;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.app {
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
