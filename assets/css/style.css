@@ -219,6 +219,7 @@
   cursor: pointer;
   margin-top: 30px;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .container__trending-img {
@@ -253,6 +254,40 @@
   backface-visibility: hidden;
   overflow: hidden;
   transform: rotateY(180deg);
+}
+
+.icon-eye,
+.icon-bag {
+  position: absolute;
+  right: -30px;
+  font-size: 2rem;
+  color: rgb(155, 153, 153);
+  opacity: 0.3;
+  transition: ease-in 0.3s;
+  padding: 10px;
+}
+
+.icon-eye {
+}
+
+.icon-bag {
+  top: 40px;
+}
+
+.icon-eye:hover, .icon-bag:hover {
+  color: #000;
+}
+
+.container__trending-item:hover .icon-eye {
+  transform: translateX(-40px);
+  transition: ease-in 0.3s;
+  opacity: 1;
+}
+
+.container__trending-item:hover .icon-bag {
+  transform: translateX(-40px);
+  transition: ease-in 0.4s;
+  opacity: 1;
 }
 
 /* Product */
@@ -330,6 +365,19 @@
   line-height: 2.4rem;
 }
 
+.load-more-news {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  width: 116px;
+  height: 48px;
+  background-color: #000;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 48px;
+}
+
 /* Footer */
 
 /* Footer top */
@@ -379,6 +427,7 @@
 }
 
 .btn-subscribe {
+  cursor: pointer;
   width: 116px;
   height: 48px;
   outline: none;
