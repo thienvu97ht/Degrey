@@ -195,6 +195,8 @@
 
 .container__trending {
   margin-top: 140px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .app__container-title {
@@ -215,7 +217,23 @@
   transform: translateY(0px);
   transition: all ease 0.3s;
   cursor: pointer;
-  margin: 30px 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.container__trending-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.container__trending-img:hover {
+  transform: rotateY(180deg);
 }
 
 .container__trending-img1 {
@@ -223,6 +241,8 @@
   height: 100%;
   object-fit: cover;
   position: absolute;
+  backface-visibility: hidden;
+  overflow: hidden;
 }
 
 .container__trending-img2 {
@@ -230,17 +250,28 @@
   height: 100%;
   object-fit: cover;
   position: absolute;
-  opacity: 0;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transform: rotateY(180deg);
 }
 
-.container__trending-item:hover .container__trending-img1 {
-  opacity: 0;
+/* Product */
+
+.product-name {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
-.container__trending-item:hover .container__trending-img2 {
-  opacity: 1;
-  animation: opacityIn linear 0.4s;
-  transition: transform linear 0.2s;
+.product-price {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.currency-unit {
+  text-decoration: underline;
 }
 
 /* Tin tức */
@@ -389,13 +420,13 @@
   color: #fff;
   font-size: 1.4rem;
   line-height: 2rem;
+  margin: 0;
 }
 
 .brand-info-icon {
   color: #fff;
   margin-right: 10px;
   font-size: 2rem;
-  margin-top: 12px;
 }
 
 .brand-policy {
@@ -403,11 +434,10 @@
   padding: 20px 0;
 }
 
-
 .social-icon {
   color: #fff;
   font-size: 2rem;
-  margin : 20px;
+  margin: 20px;
   cursor: pointer;
 }
 
