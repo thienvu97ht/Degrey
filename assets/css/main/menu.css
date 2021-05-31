@@ -26,15 +26,16 @@
   border-bottom: 1px solid rgb(207, 206, 206);
 }
 
-.header__navbar-left,
+/* .header__navbar-left,
 .header__navbar-center,
 .header__navbar-right {
   flex: 1;
-}
+} */
 
 .header__navbar-center {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header__navbar-right {
