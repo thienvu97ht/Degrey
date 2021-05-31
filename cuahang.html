@@ -15,28 +15,36 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/main/menu.css">
     <link rel="stylesheet" href="./assets/css/main/footer.css">
     <link rel="stylesheet" href="./assets/css/main/cuahang.css">
+    <link rel="stylesheet" href="./assets/css/responsive/menuResponsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive/footerResponsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive/cuahangResponsive.css">
 </head>
 
 <body>
     <div class="app">
         <div class="header">
             <!-- Nav bar -->
-            <div id="header__navbar-scroll" class="header__navbar hide-on-mobile-tablet">
-                <div class="header__navbar-left">
+            <div id="header__navbar-scroll" class="header__navbar">
+                <div class="header__navbar-left ">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
-                            <a href="index.html" class="header__navbar-item-link header__navbar-item-link-underline">
+                        <li class="header__navbar-item hide-on-pc show-on-mobile-tablet">
+                            <label for="" href="#" class="header__navbar-item-link">
+                                <i class="header__navbar-icon ti-menu"></i>
+                            </label>
+                        </li>
+
+                        <li class="header__navbar-item hide-on-mobile-tablet">
+                            <a href="" class="header__navbar-item-link header__navbar-item-link-underline">
                                 Trang chủ
                             </a>
                         </li>
 
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item hide-on-mobile-tablet">
                             <a href="listproducts.html"
                                 class="header__navbar-item-link header__navbar-item-link-underline">
                                 Sản phẩm
@@ -65,13 +73,13 @@
                             </div>
                         </li>
 
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item hide-on-mobile-tablet">
                             <a href="cuahang.html" class="header__navbar-item-link header__navbar-item-link-underline">
                                 Cửa hàng
                             </a>
                         </li>
 
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item hide-on-mobile-tablet">
                             <a href="gioithieu.html"
                                 class="header__navbar-item-link header__navbar-item-link-underline">
                                 Giới thiệu
@@ -83,33 +91,33 @@
                 <div class="header__navbar-center">
                     <a href="index.html">
                         <img src="//theme.hstatic.net/1000281824/1000704890/14/logo.png?v=383"
-                        class="header__navbar-brand-logo" alt="">
+                            class="header__navbar-brand-logo" alt="">
                     </a>
                 </div>
 
                 <div class="header__navbar-right">
                     <ul class="header__navbar-list">
 
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item hide-on-mobile-tablet">
                             <a href="login.html" class="header__navbar-item-link header__navbar-item-link-underline">
                                 Đăng nhập
                             </a>
                         </li>
 
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item hide-on-mobile-tablet">
                             <label for="header__menu-search" href="#" class="header__navbar-item-link">
                                 <i class="header__navbar-icon ti-search"></i>
                             </label>
                         </li>
 
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item hide-on-mobile-tablet">
                             <a href="" class="header__navbar-item-link">
                                 <i class="header__navbar-icon ti-heart"></i>
                             </a>
                         </li>
 
                         <li class="header__navbar-item">
-                            <label for="header__menu-bag" href="#" class="header__navbar-item-link">
+                            <label for="" href="#" class="header__navbar-item-link">
                                 <i class="header__navbar-icon ti-bag"></i>
                             </label>
                             <span class="header__navbar-item-notice">2</span>
@@ -137,11 +145,11 @@
                             </div>
 
                             <div class="col l-4 m-4 c-10 c-o-1 list-srote-item">
-                                <h4 class="list-srote-item-title">ĐỊA CHỈ</h4>
+                                <h4 class="list-srote-item-title hide-on-mobile-tablet">ĐỊA CHỈ</h4>
                             </div>
 
                             <div class="col l-4 m-4 c-10 c-o-1 list-srote-item">
-                                <h4 class="list-srote-item-title">LIÊN LẠC</h4>
+                                <h4 class="list-srote-item-title hide-on-mobile-tablet">LIÊN LẠC</h4>
                             </div>
 
                             <!-- List Item -->
@@ -225,14 +233,15 @@
             <div class="footer-bottom">
                 <div class="grid wide brand-info-container">
                     <div class="row">
-                        <div class="col l-3 m-6 c-10 c-o-1">
+                        <div class="col l-3 m-12 c-12 text-center">
                             <div class="brand-info ">
                                 <img src="https://file.hstatic.net/1000281824/file/1_82476e8c8d9c485ab81af7c66dc88a32.png"
                                     class="brand-info-img" alt="">
                             </div>
+
                         </div>
 
-                        <div class="col l-3 m-6 c-10 c-o-1">
+                        <div class="col l-3 m-12 c-12 mt-tablet-10 ">
                             <div class="brand-info">
                                 <i class="brand-info-icon ti-home"></i>
                                 <p class="brand-info-text">
@@ -246,14 +255,14 @@
                             </div>
                         </div>
 
-                        <div class="col l-3 m-6 c-10 c-o-1">
+                        <div class="col l-3 m-12 c-12 mt-tablet-10">
                             <div class="brand-info">
                                 <i class="brand-info-icon ti-email"></i>
                                 <p class="brand-info-text">Email: degrey.vn@gmail.com</p>
                             </div>
                         </div>
 
-                        <div class="col l-3 m-6 c-10 c-o-1">
+                        <div class="col l-3 m-12 c-12 mt-tablet-10">
                             <div class="brand-info">
                                 <i class="brand-info-icon ti-mobile"></i>
                                 <p class="brand-info-text">Tel: 0336311117</p>
@@ -269,22 +278,31 @@
                         <i class="social-icon fab fa-youtube"></i>
                         <i class="social-icon fab fa-tiktok"></i>
                     </div>
-                    <div class="footer-menu text-center">
-                        <a href="" class="footer-menu-link">
-                            TÌM KIẾM
-                        </a>
-                        <a href="" class="footer-menu-link">
-                            GIỚI THIỆU
-                        </a>
-                        <a href="" class="footer-menu-link">
-                            CHÍNH SÁCH ĐỔI TRẢ
-                        </a>
-                        <a href="" class="footer-menu-link">
-                            CHÍNH SÁCH BẢO MẬT
-                        </a>
-                        <a href="" class="footer-menu-link">
-                            ĐIỀU KHOẢN DỊCH VỤ
-                        </a>
+                    <div class="footer-menu">
+                        <div class="grid wide">
+                            <div class="row">
+                                <div class="col l-6 m-6 c-12 footer-menu-left">
+                                    <a href="" class="footer-menu-link">
+                                        TÌM KIẾM
+                                    </a>
+                                    <a href="" class="footer-menu-link">
+                                        GIỚI THIỆU
+                                    </a>
+                                    <a href="" class="footer-menu-link">
+                                        CHÍNH SÁCH ĐỔI TRẢ
+                                    </a>
+                                </div>
+
+                                <div class="col l-6 m-6 c-12 footer-menu-right">
+                                    <a href="" class="footer-menu-link">
+                                        CHÍNH SÁCH BẢO MẬT
+                                    </a>
+                                    <a href="" class="footer-menu-link">
+                                        ĐIỀU KHOẢN DỊCH VỤ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <p class="designer">DuongVu.Studio©2021</p>
