@@ -15,6 +15,10 @@
     height: 60px;
     padding: 0 10px;
   }
+
+  .header__navbar-list .header__icon-menu {
+    display: block;
+  }
 }
 
 /* Tablet */
