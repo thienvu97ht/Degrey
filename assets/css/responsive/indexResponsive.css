@@ -25,6 +25,16 @@
   .container__trending-item:hover .icon-bag {
     transform: translateX(0);
   }
+
+  /* Slide 1 */
+  .slide-container {
+    top: 60px;
+  }
+
+  /* Trending container */
+  .container__trending {
+    margin-top: 90px;
+  }
 }
 
 /* Tablet */

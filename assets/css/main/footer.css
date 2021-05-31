@@ -37,6 +37,16 @@
   margin-top: 50px;
 }
 
+.input-email-left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-email-right {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .email-input {
   width: 434px;
   font-size: 1.6rem;
@@ -67,7 +77,7 @@
 }
 
 .brand-info-container {
-  padding: 44px;
+  padding: 44px 0;
 }
 
 .brand-info {
@@ -104,6 +114,15 @@
   cursor: pointer;
 }
 
+.footer-menu-left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-menu-right {
+  display: flex;
+}
+
 .footer-menu-link {
   text-decoration: none;
   color: #fff;
@@ -113,7 +132,7 @@
   position: relative;
 }
 
-.footer-menu-link:not(:last-child)::after {
+.footer-menu-link:not(.footer-menu-right .footer-menu-link:last-child)::after {
   content: "";
   display: block;
   position: absolute;
@@ -125,6 +144,10 @@
   transform: translateY(-50%);
 }
 
+.footer-menu-right .footer-menu-link:first-child {
+  margin-left: -4px;
+}
+
 .footer-menu-link:hover {
   text-decoration: underline;
 }
@@ -134,3 +157,5 @@
   font-size: 1.4rem;
   text-align: center;
 }
+
+
