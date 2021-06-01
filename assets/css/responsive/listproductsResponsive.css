@@ -24,6 +24,10 @@
   .product-items:hover .icon-bag {
     transform: translateX(0);
   }
+  
+  .list-products-container {
+    margin-top: 80px;
+  }
 }
 
 /* Tablet */
@@ -49,6 +53,10 @@
 
   .custom-dropdown__select {
     width: 154px;
+  }
+
+  .list-products-container {
+    margin-top: 80px;
   }
 }
 

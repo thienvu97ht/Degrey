@@ -1,5 +1,5 @@
 .list-products-container {
-  margin-top: 140px;
+  margin-top: 110px;
 }
 
 /* Filter */
@@ -60,8 +60,6 @@
   outline: none;
   cursor: pointer;
 }
-
-option { height: 50px; }
 
 /* List product */
 
