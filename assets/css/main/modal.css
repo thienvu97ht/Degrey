@@ -6,7 +6,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  display: flex;
+  display: none;
 }
 
 .modal__overlay {
@@ -65,13 +65,24 @@
   align-items: center;
 }
 
+input[name="option-0"] {
+  display: none;
+}
+
 .size-title {
   font-size: 1.4rem;
-  margin-right: 10px;
+  width: 70px;
 }
 
 .size-input-box {
   margin-left: 10px;
+}
+
+.size-input-box label {
+  background-color: #eee;
+  padding: 10px 14px;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .quantity-product-box {
@@ -81,11 +92,21 @@
 
 .quantity-input {
   height: 36px;
+  width: 192px;
   font-size: 1.4rem;
   outline: none;
   padding: 0 10px;
   color: #b0b0b0;
   border: 1px solid #b0b0b0;
+  margin-left: 10px;
+}
+
+#swatch-0-nh:checked ~ label[for="swatch-0-nh"],
+#swatch-0-trung:checked ~ label[for="swatch-0-trung"],
+#swatch-0-lon:checked ~ label[for="swatch-0-lon"] {
+  color: #fff;
+  background-color: #bda47d;
+  transition: ease-in 0.1s;
 }
 
 .modal-product-price {
@@ -130,4 +151,11 @@
 .modal__body-close-btn {
   color: #fff;
   font-size: 1.4rem;
+}
+
+/* Ẩn trên Mobile & Tablet */
+@media (max-width: 1023px) {
+  .modal {
+    display: none;
+  }
 }
