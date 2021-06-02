@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./assets/css/main/menu.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main/footer.css">
+    <link rel="stylesheet" href="./assets/css/main/modal.css">
     <link rel="stylesheet" href="./assets/css/responsive/indexResponsive.css">
     <link rel="stylesheet" href="./assets/css/responsive/footerResponsive.css">
     <link rel="stylesheet" href="./assets/css/responsive/menuResponsive.css">
@@ -495,10 +496,78 @@
         </div>
     </div>
 
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/js.js"></script>
+    <!-- Modal layout -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body">
+            <div class="gird custom-wide-model-box">
+                <div class="row">
+                    <div class="col l-6 detail-product-left">
+                        <img src="https://product.hstatic.net/1000281824/product/e8ab76c2-b57c-4861-836b-685b9d73dcf5_7fb1655340114ca7bf2a480718c7199d_grande.jpeg"
+                            alt="" class="detail-product-img">
+
+                        <div class="small-img-product">
+                            <div class="small-img-product-box">
+                                <img src="https://product.hstatic.net/1000281824/product/e8ab76c2-b57c-4861-836b-685b9d73dcf5_7fb1655340114ca7bf2a480718c7199d_grande.jpeg"
+                                    alt="" class="small-img-product-img">
+                            </div>
+                            <div class="small-img-product-box">
+                                <img src="https://product.hstatic.net/1000281824/product/e2e226f4-4b09-40d9-8800-bb3e10cbf531_1173270acf634e2989cbbc9818313cb1_grande.jpeg"
+                                    alt="" class="small-img-product-img">
+                            </div>
+                            <div class="small-img-product-box">
+                                <img src="https://product.hstatic.net/1000281824/product/9f2fee31-4ed7-45ac-b8d3-47fb3389959c_99e325a42b3b4921a05f81929bca02ef_grande.jpeg"
+                                    alt="" class="small-img-product-img">
+                            </div>
+                            <div class="small-img-product-box">
+                                <img src="https://product.hstatic.net/1000281824/product/aa537864-cfa3-42ad-9a9f-5be1b23f4827_128761ceea22403788c0dac679bdbcf4_grande.jpeg"
+                                    alt="" class="small-img-product-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-6 detail-product-right">
+                        <h1 class="modal-title-product">Sơ Mi Siết Tay Anh Xanh - STA Xanh</h1>
+                        <p class="category-product">Áo</p>
+
+                        <div class="modal-size-box">
+                            <p class="size-title">Kích thước</p>
+                            <div data-value="NHỎ" class="size-input-box">
+                                <input id="swatch-0-nh" type="radio" name="option-0" value="NHỎ">
+                                <label for="swatch-0-nh">NHỎ</label>
+                            </div>
+                            <div data-value="TRUNG" class="size-input-box">
+                                <input id="swatch-0-trung" type="radio" name="option-0" value="TRUNG">
+                                <label for="swatch-0-trung">TRUNG</label>
+                            </div>
+                            <div data-value="LỚN" class="size-input-box">
+                                <input id="swatch-0-lon" type="radio" name="option-0" value="LỚN">
+                                <label for="swatch-0-lon">LỚN</label>
+                            </div>
+                        </div>
+
+                        <div class="quantity-product-box">
+                            <p class="size-title">Số lượng</p>
+                            <input type="text" value="1" class="quantity-input">
+                        </div>
+
+                        <p class="modal-product-price">330,000 VND</p>
+
+                        <button class="modal-add-product-btn">THÊM VÀO GIỎ</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal__body-close">
+                <btton class="modal__body-close-btn">x</btton>
+            </div>
+        </div>
+
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <script src="./assets/js/js.js"></script>
 </body>
 
 </html>
