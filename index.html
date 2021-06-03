@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="./assets/css/main/menu.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main/footer.css">
-    <link rel="stylesheet" href="./assets/css/main/modal.css">
+    <link rel="stylesheet" href="./assets/css/main/modalDetailProduct.css">
+    <link rel="stylesheet" href="./assets/css/main/modalCart.css">
     <link rel="stylesheet" href="./assets/css/responsive/indexResponsive.css">
     <link rel="stylesheet" href="./assets/css/responsive/footerResponsive.css">
     <link rel="stylesheet" href="./assets/css/responsive/menuResponsive.css">
@@ -122,9 +123,9 @@
                         </li>
 
                         <li class="header__navbar-item">
-                            <label for="" href="#" class="header__navbar-item-link">
+                            <button onclick="showModalCart()" class="header__navbar-item-link">
                                 <i class="header__navbar-icon ti-bag"></i>
-                            </label>
+                            </button>
                             <span class="header__navbar-item-notice">2</span>
                         </li>
                     </ul>
@@ -166,7 +167,7 @@
                                     <img src="https://product.hstatic.net/1000281824/product/d8b5b151-57cc-414f-bfec-d909e798aa20_5a5da2462e2142c592b4bafadd628dad_large.jpeg"
                                         alt="" class="container__trending-img2">
                                 </div>
-                                <button class="quick-view-btn" onclick="showModal()">
+                                <button class="quick-view-btn" onclick="showModalDetailProduct()">
                                     <i class="icon-eye ti-eye hide-on-mobile-tablet" title="Xem nhanh"></i>
                                 </button>
                                 <button class="add-cart-btn">
@@ -190,7 +191,7 @@
                                     <img src="https://product.hstatic.net/1000281824/product/e2e226f4-4b09-40d9-8800-bb3e10cbf531_1173270acf634e2989cbbc9818313cb1_large.jpeg"
                                         alt="" class="container__trending-img2">
                                 </div>
-                                <button class="quick-view-btn" onclick="showModal()">
+                                <button class="quick-view-btn" onclick="showModalDetailProduct()">
                                     <i class="icon-eye ti-eye hide-on-mobile-tablet" title="Xem nhanh"></i>
                                 </button>
                                 <button class="add-cart-btn">
@@ -214,7 +215,7 @@
                                     <img src="https://product.hstatic.net/1000281824/product/a21d8180-8d30-4b60-b216-99ecc776a345_2598ffa046ce48e68546e00b1d09a72a_large.jpeg"
                                         alt="" class="container__trending-img2">
                                 </div>
-                                <button class="quick-view-btn" onclick="showModal()">
+                                <button class="quick-view-btn" onclick="showModalDetailProduct()">
                                     <i class="icon-eye ti-eye hide-on-mobile-tablet" title="Xem nhanh"></i>
                                 </button>
                                 <button class="add-cart-btn">
@@ -238,7 +239,7 @@
                                     <img src="https://product.hstatic.net/1000281824/product/f5d7907f-263c-481f-bbb8-54ef86781258_2f7b94c822364ecb96c84631f54c1c50_large.jpeg"
                                         alt="" class="container__trending-img2">
                                 </div>
-                                <button class="quick-view-btn" onclick="showModal()">
+                                <button class="quick-view-btn" onclick="showModalDetailProduct()">
                                     <i class="icon-eye ti-eye hide-on-mobile-tablet" title="Xem nhanh"></i>
                                 </button>
                                 <button class="add-cart-btn">
@@ -262,7 +263,7 @@
                                     <img src="https://product.hstatic.net/1000281824/product/896c8427-e613-4f0a-b05e-c1efc8888cf5_ffdf931f34504beab6c672b706d85fa0_large.jpeg"
                                         alt="" class="container__trending-img2">
                                 </div>
-                                <button class="quick-view-btn" onclick="showModal()">
+                                <button class="quick-view-btn" onclick="showModalDetailProduct()">
                                     <i class="icon-eye ti-eye hide-on-mobile-tablet" title="Xem nhanh"></i>
                                 </button>
                                 <button class="add-cart-btn">
@@ -286,7 +287,7 @@
                                     <img src="https://product.hstatic.net/1000281824/product/98c11f37-b30f-4efc-b0dc-77579f4f50a9_5d73717563d74cb28eb9bdaed9374760_large.jpeg"
                                         alt="" class="container__trending-img2">
                                 </div>
-                                <button class="quick-view-btn" onclick="showModal()">
+                                <button class="quick-view-btn" onclick="showModalDetailProduct()">
                                     <i class="icon-eye ti-eye hide-on-mobile-tablet" title="Xem nhanh"></i>
                                 </button>
                                 <button class="add-cart-btn">
@@ -310,7 +311,7 @@
                                     <img src="https://product.hstatic.net/1000281824/product/2f9abbf6-32da-4f1d-b732-21a99ab1032e_3c0eda6ed0b4448793112a8d1b4b1970_large.jpeg"
                                         alt="" class="container__trending-img2">
                                 </div>
-                                <button class="quick-view-btn" onclick="showModal()">
+                                <button class="quick-view-btn" onclick="showModalDetailProduct()">
                                     <i class="icon-eye ti-eye hide-on-mobile-tablet" title="Xem nhanh"></i>
                                 </button>
                                 <button class="add-cart-btn">
@@ -334,7 +335,7 @@
                                     <img src="https://product.hstatic.net/1000281824/product/1-te9101-2_ce8bd8b50c2b4f8ba2640cef578f2308_large.jpg"
                                         alt="" class="container__trending-img2">
                                 </div>
-                                <button class="quick-view-btn" onclick="showModal()">
+                                <button class="quick-view-btn" onclick="showModalDetailProduct()">
                                     <i class="icon-eye ti-eye hide-on-mobile-tablet" title="Xem nhanh"></i>
                                 </button>
                                 <button class="add-cart-btn">
@@ -533,7 +534,8 @@
     <div class="modal">
         <div class="modal__overlay" onclick="closeModal()"></div>
 
-        <div class="modal__body">
+        <!-- Modal detail product -->
+        <div class="modal__body-detail-product">
             <div class="gird custom-wide-model-box">
                 <div class="row">
                     <div class="col l-6 detail-product-left sv-slider-modal">
@@ -594,9 +596,92 @@
             </div>
 
             <div class="modal__body-close">
-                <btton class="modal__body-close-btn" onclick="closeModal()">
+                <btton class="modal__body-close-btn" onclick="closeModalDetail()">
                     <i class="fas fa-times"></i>
                 </btton>
+            </div>
+        </div>
+
+        <!-- Modal cart -->
+        <div class="header__menu-nav-bag">
+            <div class="nav__bang-header">
+                <span class="nav__bang-header-cart">Giỏ hàng</span>
+                <label onclick="closeModalCart()" class="nav__bag-header-link">
+                    <i class="nav__bang-header-icon ti-close"></i>
+                </label>
+            </div>
+        
+            <div class="shopping__cart-container">
+                <ul class="nav__bag-list">
+                    <li class="nav__bag-list-item">
+                        <div class="nav__bag-list-item-left">
+                            <img src="https://goya.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2019/05/woman-abstract-a1-150x150.jpg" alt="">
+                        </div>
+                        <div class="nav__bag-list-item-right">
+                            <div class="nav__bag--item-name">
+                                <a href="" class="nav__bag--item-name-link">
+                                    Abstract Print Cotton Blouse
+                                </a>
+                                <i class="ti-close nav__bag--item-name-close"></i>
+                            </div>
+                            <div class="nav__bag--item-pricing">
+                                <div class="nav__bag--item-quantity">
+                                    <a href="#" class="minus">
+                                        <i class=" ti-minus"></i>
+                                    </a>
+                                    
+                                    <input type="number" class="nav__bag--item-quantity-number" maxlength="1" value="1" placeholder="0">
+                                    <a href="#" class="plus">
+                                        <i class=" ti-plus"></i>
+                                    </a>
+                                </div>
+
+                                <p class="nav__bag--item-price">
+                                   $39.00
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav__bag-list-item">
+                        <div class="nav__bag-list-item-left">
+                            <img src="https://goya.everthemes.com/demo-fashion/wp-content/uploads/sites/3/2020/01/woman-microbag-a1-150x150.jpg" alt="">
+                        </div>
+                        <div class="nav__bag-list-item-right">
+                            <div class="nav__bag--item-name">
+                                <a href="" class="nav__bag--item-name-link">
+                                    Micro Form Bag
+                                </a>
+                                <i class="ti-close nav__bag--item-name-close"></i>
+                            </div>
+                            <div class="nav__bag--item-pricing">
+                                <div class="nav__bag--item-quantity">
+                                    <a href="#" class="minus">
+                                        <i class=" ti-minus"></i>
+                                    </a>
+                                    
+                                    <input type="number" class="nav__bag--item-quantity-number"  maxlength="2" value="1" placeholder="0">
+                                    <a href="#" class="plus">
+                                        <i class=" ti-plus"></i>
+                                    </a>
+                                </div>
+
+                                <p class="nav__bag--item-price">
+                                   $98.00
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="nav__bag-cart-panel">
+                    <div class="nav__bag-cart-panel-total">
+                        <p class="nav__bag-total-text">Subtotal:</p>
+                        <p class="nav__bag-total-price">$137.00</p>
+                    </div>
+                    <a href="" class="nav__bag-view-cart">View cart</a>
+                    <a href="" class="nav__bag-check-out">Checkout</a>
+                </div>
             </div>
         </div>
     </div>
@@ -606,7 +691,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/owl.carousel2.thumbs@0.1.8/dist/owl.carousel2.thumbs.min.js"></script>
     <script src="./assets//js/slide.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/modal.js"></script>
 </body>
 
 </html>

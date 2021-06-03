@@ -60,6 +60,11 @@
   position: relative;
 }
 
+.header__navbar-item button {
+  border: none;
+  background-color: transparent;
+}
+
 .header__navbar-item::after {
   content: "";
   display: block;
@@ -171,3 +176,4 @@
   width: 100%;
   left: 0%;
 }
+
