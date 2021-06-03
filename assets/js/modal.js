@@ -32,5 +32,4 @@ function showModalDetailProduct() {
 function showModalCart() {
   modalElm.style.display = "flex";
   cartElm.style.display = "block";
-  cartElm.classList.add(".modal-cart-active");
 }
