@@ -64,4 +64,32 @@ $(document).ready(function () {
   $(".owl-prev-one").click(function () {
     owl.trigger("prev.owl.carousel", [700]);
   });
+
+});
+
+/* Modal */
+$('.sv-slider-modal .owl-carousel').owlCarousel({
+  autoplay: false,
+  autoplayHoverPause: true,
+  dots: false,
+  nav: false,
+  thumbs: true,
+  thumbImage: true,
+  thumbsPrerendered: true,
+  thumbContainerClass: 'owl-thumbs',
+  thumbItemClass: 'owl-thumb-item',
+  dots: true,
+  loop: true,
+  items: 1,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 1,
+    },
+    992: {
+      items: 1,
+    }
+  }
 });
