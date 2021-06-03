@@ -84,38 +84,44 @@
 
 .icon-eye,
 .icon-bag {
-  position: absolute;
-  right: -30px;
   font-size: 2rem;
-  color: rgb(104, 102, 102);
+}
+
+.quick-view-btn,
+.add-cart-btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: -34px;
+  cursor: pointer;
   opacity: 0.3;
-  padding: 10px;
+  color: rgb(125, 125, 125);
 }
 
-.icon-eye {
+.quick-view-btn {
   transition: ease-in 0.2s;
 }
 
-.icon-bag {
+.add-cart-btn {
   transition: ease-in 0.3s;
-  top: 40px;
+  top: 50px;
 }
 
-.icon-eye:hover,
-.icon-bag:hover {
+.container__trending-item:hover .quick-view-btn {
+  transform: translateX(-45px);
+  transition: ease-in 0.2s;
+  opacity: 1;
+}
+
+.container__trending-item:hover .add-cart-btn {
+  transform: translateX(-45px);
+  transition: ease-in 0.3s;
+  opacity: 1;
+}
+
+.quick-view-btn:hover,
+.add-cart-btn:hover {
   color: #000;
-}
-
-.container__trending-item:hover .icon-eye {
-  transform: translateX(-40px);
-  transition: ease-in 0.2s;
-  opacity: 1;
-}
-
-.container__trending-item:hover .icon-bag {
-  transform: translateX(-40px);
-  transition: ease-in 0.3s;
-  opacity: 1;
 }
 
 /* Product */
