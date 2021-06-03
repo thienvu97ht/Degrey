@@ -24,10 +24,12 @@
     <link rel="stylesheet" href="./assets/css/main/footer.css">
     <link rel="stylesheet" href="./assets/css/main/modalDetailProduct.css">
     <link rel="stylesheet" href="./assets/css/main/modalCart.css">
+    <link rel="stylesheet" href="./assets/css/main/modalMenu.css">
     <link rel="stylesheet" href="./assets/css/responsive/indexResponsive.css">
     <link rel="stylesheet" href="./assets/css/responsive/footerResponsive.css">
     <link rel="stylesheet" href="./assets/css/responsive/menuResponsive.css">
     <link rel="stylesheet" href="./assets/css/responsive/modalCartResponsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive/modalMenuResponsive.css">
 
 
 </head>
@@ -40,9 +42,9 @@
                 <div class="header__navbar-left ">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__icon-menu">
-                            <label for="" href="#" class="header__navbar-item-link">
+                            <button class="header__navbar-item-link" onclick="showModalMenu()">
                                 <i class="header__navbar-icon ti-menu"></i>
-                            </label>
+                            </button>
                         </li>
 
                         <li class="header__navbar-item hide-on-mobile-tablet">
@@ -692,6 +694,66 @@
                     </div>
                     <a href="" class="nav__bag-view-cart">View cart</a>
                     <a href="" class="nav__bag-check-out">Checkout</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal menu mobile -->
+        <div class="modal-menu-mobile">
+            <div class="menu__mobile--tablet-header">
+                <button onclick="closeModalMenu()" class="mobile--tablet__link-close">
+                    <i class="mobile--tablet__close-icon ti-close"></i>
+                </button>
+            </div>
+            <div class="menu__mobile--tablet-body">
+
+                <div class="menu__mobile--tablet-body-top">
+                    <div class="menu__mobile--tablet-sreach">
+                        <i class="menu__mobile--tablet-sreach-icon ti-search"></i>
+                        <input type="text" class="menu__mobile--tablet-sreach-input" placeholder="Tìm kiếm sản phẩm...">
+                    </div>
+
+                    <div class="menu__mobile--tablet-nav">
+                        <a href="" class="menu__mobile--tablet-content">Trang chủ</a>
+
+                    </div>
+                    <div class="menu__mobile--tablet-nav">
+                        <a href="" class="menu__mobile--tablet-content">Sản phẩm</a>
+                        <i class="menu__mobile--tablet-main-icon ti-angle-right"></i>
+                    </div>
+                    <div class="menu__mobile--tablet-nav">
+                        <a href="" class="menu__mobile--tablet-content">Cửa hàng</a>
+
+                    </div>
+                    <div class="menu__mobile--tablet-nav">
+                        <a href="" class="menu__mobile--tablet-content">Giới thiệu</a>
+
+                    </div>
+                </div>
+
+
+                <div class="menu__mobile--tablet-body-bottom">
+                    <div class="menu__mobile--tablet-subnav">
+                        <a class="menu__mobile--tablet-subnav-content">Đăng nhập</a>
+                        <i class="menu__mobile--tablet-subnav-icon ti-lock"></i>
+                    </div>
+
+                    <div class="menu__mobile--tablet-subnav">
+                        <a class="menu__mobile--tablet-subnav-content">Giỏ hàng</a>
+                        <i class="menu__mobile--tablet-subnav-icon ti-bag"></i>
+                    </div>
+
+                    <div class="menu__mobile--tablet-subnav">
+                        <a class="menu__mobile--tablet-subnav-content">Yêu thích</a>
+                        <i class="menu__mobile--tablet-subnav-icon ti-heart"></i>
+                    </div>
+
+                    <div class="menu__mobile--tablet-subnav-icon-box">
+                        <i class="menu__mobile--tablet-subnav-icon ti-facebook"></i>
+                        <i class="menu__mobile--tablet-subnav-icon ti-instagram"></i>
+                        <i class="menu__mobile--tablet-subnav-icon fab fa-youtube"></i>
+                        <i class="menu__mobile--tablet-subnav-icon fab fa-tiktok"></i>
+                    </div>
                 </div>
             </div>
         </div>
