@@ -57,3 +57,8 @@ function showModalSearch() {
   modalElm.style.display = "flex";
   modalSearch.style.display = "flex";
 }
+
+/* Search product */
+function searchProduct() {
+  window.location.href = "timkiem.html";
+}

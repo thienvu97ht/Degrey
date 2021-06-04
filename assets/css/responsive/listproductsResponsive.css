@@ -24,9 +24,13 @@
   .product-items:hover .icon-bag {
     transform: translateX(0);
   }
-  
+
   .list-products-container {
     margin-top: 80px;
+  }
+
+  .products-filter-container {
+    padding: 0;
   }
 }
 
@@ -53,10 +57,19 @@
 
   .custom-dropdown__select {
     width: 154px;
+    padding: 0;
   }
 
   .list-products-container {
     margin-top: 80px;
+  }
+
+  .products-filter-container {
+    padding: 0 25px;
+  }
+
+  .filter-right-text {
+    margin-right: 5px;
   }
 }
 
@@ -75,5 +88,18 @@
 @media (max-width: 369px) {
   .product-items {
     height: 290px;
+  }
+
+  .custom-dropdown__select {
+    width: 140px;
+  }
+
+  .product-filter-item.active-ui {
+    height: 30px;
+    width: 30px;
+  }
+
+  .filter-icon-link {
+    font-size: 1.4rem;
   }
 }
