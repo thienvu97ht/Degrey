@@ -6,6 +6,7 @@
   bottom: 0;
   max-width: 460px;
   background-color: #fff;
+  display: none;
 }
 
 .nav__bang-header {

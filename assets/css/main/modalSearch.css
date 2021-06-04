@@ -1,0 +1,62 @@
+/* Sreach */
+.modal-search {
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  height: 90px;
+  display: none;
+}
+
+.header__menu-sreach-nav {
+  display: flex;
+  width: 1140px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.header__menu-sreach-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__menu-sreach-close-link {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav__bang-sreach-close-icon {
+  font-size: 1.6rem;
+  background-color: #f2f2f2;
+  border: 9px solid #f2f2f2;
+  border-radius: 50%;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__menu-sreach-bar-all {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-sreach-input {
+  outline: none;
+  height: 60px;
+  width: 700px;
+  font-size: 2.6rem;
+  border: none;
+  border-bottom: 1px solid rgb(134, 134, 134);
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+  .modal-search {
+    display: none;
+  }
+}

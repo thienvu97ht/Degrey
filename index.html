@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./assets/css/main/modalDetailProduct.css">
     <link rel="stylesheet" href="./assets/css/main/modalCart.css">
     <link rel="stylesheet" href="./assets/css/main/modalMenu.css">
+    <link rel="stylesheet" href="./assets/css/main/modalSearch.css">
     <link rel="stylesheet" href="./assets/css/responsive/indexResponsive.css">
     <link rel="stylesheet" href="./assets/css/responsive/footerResponsive.css">
     <link rel="stylesheet" href="./assets/css/responsive/menuResponsive.css">
@@ -114,9 +115,9 @@
                         </li>
 
                         <li class="header__navbar-item hide-on-mobile-tablet">
-                            <label for="header__menu-search" href="#" class="header__navbar-item-link">
+                            <button onclick="showModalSearch()" class="header__navbar-item-link">
                                 <i class="header__navbar-icon ti-search"></i>
-                            </label>
+                            </button>
                         </li>
 
                         <li class="header__navbar-item hide-on-mobile-tablet">
@@ -754,6 +755,22 @@
                         <i class="menu__mobile--tablet-subnav-icon fab fa-youtube"></i>
                         <i class="menu__mobile--tablet-subnav-icon fab fa-tiktok"></i>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal search -->
+        <div class="modal-search">
+            <div class="header__menu-sreach-nav">
+                <div class="header__menu-sreach-bar-all">
+                    <div class="header__menu-sreach-bar">
+                        <input type="text" class="header__menu-sreach-input" placeholder="Tìm kiếm sản phẩm...">
+                    </div>
+                </div>
+                <div class="header__menu-sreach-close">
+                    <button onclick="closeModalSearch()" class="header__menu-sreach-close-link">
+                        <i class="nav__bang-sreach-close-icon ti-close"></i>
+                    </button>
                 </div>
             </div>
         </div>

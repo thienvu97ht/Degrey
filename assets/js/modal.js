@@ -3,12 +3,14 @@ var modalElm = document.querySelector(".modal");
 var modalBody = document.querySelector(".modal__body-detail-product");
 var cartElm = document.querySelector(".header__menu-nav-bag");
 var menuMobile = document.querySelector(".modal-menu-mobile");
+var modalSearch = document.querySelector(".modal-search");
 
 function closeModal() {
   modalElm.style.display = "none";
   modalBody.style.display = "none";
   cartElm.style.display = "none";
   menuMobile.style.display = "none";
+  modalSearch.style.display = "none";
 }
 
 function closeModalDetail() {
@@ -24,6 +26,11 @@ function closeModalCart() {
 function closeModalMenu() {
   modalElm.style.display = "none";
   menuMobile.style.display = "none";
+}
+
+function closeModalSearch() {
+  modalElm.style.display = "none";
+  modalSearch.style.display = "none";
 }
 
 function showModalDetailProduct() {
@@ -44,4 +51,9 @@ function showModalCart() {
 function showModalMenu() {
   modalElm.style.display = "flex";
   menuMobile.style.display = "flex";
+}
+
+function showModalSearch() {
+  modalElm.style.display = "flex";
+  modalSearch.style.display = "flex";
 }
