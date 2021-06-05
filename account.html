@@ -19,11 +19,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/main/menu.css">
     <link rel="stylesheet" href="./assets/css/main/footer.css">
-    <link rel="stylesheet" href="./assets/css/main/login.css">
+    <link rel="stylesheet" href="./assets/css/main/account.css">
     <link rel="stylesheet" href="./assets/css/responsive/footerResponsive.css">
     <link rel="stylesheet" href="./assets/css/responsive/menuResponsive.css">
-    <link rel="stylesheet" href="./assets/css/responsive/loginResponsive.css">
-    
+    <link rel="stylesheet" href="./assets/css/responsive/accountResponsive.css">
+
 </head>
 
 <body>
@@ -122,90 +122,127 @@
             </div>
         </div>
 
-        <div class="log-in-sign-up-container">
-            <div class="login-socia-network">
-                <p class="login-socia-title">ĐĂNG NHẬP BẰNG</p>
-
-                <div class="text-center">
-                    <button class="btn-socialoginfb">Facebook</button>
-                    <button class="btn-socialogingg">Google+</button>
-                </div>
-            </div>
-
-            <div class="line-or">
-                <span class="liner-or-text">Hoặc</span>
-            </div>
-
-            <div class="log-in-sign-up-form">
-                <div class="grid wide">
-                    <div class="row">
-                        <div class="col l-6 m-12 c-10 c-o-1">
-                            <div class="login-socia-title">ĐĂNG NHẬP</div>
-
-                            <div class="content-cus-form">
-                                <form id="loginForm">
-                                    <div class="col_full">
-                                        <span class="not-null">*</span>
-                                        <span class="icon_checkout ico-email"></span>
-                                        <input type="email" id="login-form-username" name="customer[email]"
-                                            placeholder="Email của bạn" value="" class="form-control" />
+        <div class="account-container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2 m-12 c-10 c-o-1">
+                        <div class="nav-bar-top">
+                            <p class="account-name">Dương Đình Thiện Vũ</p>
+                        </div>
+                        <div class="nav-bar-bottom">
+                            <ul class="account-information-list">
+                                <li class="account-information-item active">
+                                    <a href="" class="account-information-link">Thông tin chung</a>
+                                </li>
+                                <li class="account-information-item">
+                                    <a href="" class="account-information-link">Sổ địa chỉ</a>
+                                </li>
+                                <li class="account-information-item">
+                                    <a href="" class="account-information-link">Đơn hàng của tôi</a>
+                                </li>
+                                <li class="account-information-item">
+                                    <a href="" class="account-information-link">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-10 m-12 c-10 c-o-1">
+                        <div class="detailAccount">
+                            <div class="accountInfo">
+                                <h3>BẢNG THÔNG TIN CỦA TÔI</h3>
+                                <div class="user_info-container">
+                                    <p>Thông tin tài khoản</p>
+                                    <div class="user_info-box">
+                                        <ul>
+                                            <li>
+                                                <span>Họ và tên:</span>
+                                                <span>Dương Đình Thiện Vũ</span>
+                                            </li>
+                                            <li>
+                                                <span>Email:</span>
+                                                <span>thien.vu97ht123@gmail.com</span>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="col_full">
-                                        <span class="not-null">*</span>
-                                        <span class="icon_checkout ico-pass"></span>
-                                        <input type="password" id="login-form-password" name="customer[password]"
-                                            placeholder="Nhập mật khẩu" value="" class="form-control" />
-                                    </div>
-                                    <div class="col_full nobottommargin action">
-                                        <button onclick="redirectAccount()" class="button button-3d button-black nomargin" id="login-form-submit"
-                                            name="login-form-submit" type='submit' value="login">Đăng nhập</button>
-                                        <div class="text-center">
-                                            <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                                </div>
+                            </div>
+                            <div class="accountNeworder">
+                                <div class="accountNeworder-title">
+                                    <p>Các đơn hàng vừa đặt</p>
+                                    <a href="">Xem tất cả</a>
+                                </div>
+                                <div class="accountNeworder-table">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Mã đơn hàng</th>
+                                                <th>Ngày đặt</th>
+                                                <th>Sản phẩm</th>
+                                                <th>Tổng tiền</th>
+                                                <th>Trạng thái đơn hàng</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#310970</td>
+                                                <td>19/04/2021</td>
+                                                <td>
+                                                    1. <a href="" title="">HEYYOU
+                                                        ESSENTIAL WHITE TEE - L</a> <br />
+
+                                                    2. <a href="" title="">HEYYOU BASIC NHỊP TIM BABY BLUE TEE - L</a>
+                                                    <br />
+                                                </td>
+                                                <td>296,000₫</td>
+                                                <td>Xử lý thành công</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="accountAddress">
+                                <div class="accountAddress-title">
+                                    <p>Sổ địa chỉ</p>
+                                    <a href="">Xem tất cả</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col l-6 m-12 c-12">
+                                        <div class="accountAddress-box">
+                                            <p class="name">Dương Đình Thiện Vũ</p>
+                                            <p class="address">Địa chỉ: Lô C - Chung cư Hiệp Bình Chánh - Đường 23 -
+                                                Phường
+                                                Hiệp Bình Chánh - Quận Thủ Đức - TP Hồ Chí Minh , Vietnam</p>
+                                            <p class="phone">Điện thoại: 84981877669</p>
+                                            <p class="address-actions">
+                                                <span class="action-btn action-edit">
+                                                    <a href="">Sửa</a>
+                                                </span>
+                                                <span class="action-btn action-delete">
+                                                    <a href="">Xóa</a>
+                                                </span>
+                                            </p>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col l-6 m-12 c-10 c-o-1">
-                            <div class="login-socia-title">ĐĂNG KÝ THÀNH VIÊN MỚI</div>
 
-                            <div class="content-cus-form">
-                                <form action="">
-                                    <div class="col_full">
-                                        <span class="not-null">*</span>
-                                        <span class="icon_checkout ico-name"></span>
-                                        <input required type="text" value="" autocomplete="off"
-                                            name="customer[last_name]" placeholder="Họ" id="last_name" class="text"
-                                            size="30" />
-                                    </div>
-                                    <div class="col_full">
-                                        <span class="not-null">*</span>
-                                        <span class="icon_checkout ico-name"></span>
-                                        <input required type="text" value="" autocomplete="off"
-                                            name="customer[first_name]" placeholder="Tên" id="first_name" class="text"
-                                            size="30" />
+                                    <div class="col l-6 m-12 c-12">
+                                        <div class="accountAddress-box">
+                                            <p class="name">Dương Đình Thiện Vũ</p>
+                                            <p class="address">Địa chỉ: Lô C - Chung cư Hiệp Bình Chánh - Đường 23 -
+                                                Phường
+                                                Hiệp Bình Chánh - Quận Thủ Đức - TP Hồ Chí Minh , Vietnam</p>
+                                            <p class="phone">Điện thoại: 84981877669</p>
+                                            <p class="address-actions">
+                                                <span class="action-btn action-edit">
+                                                    <a href="">Sửa</a>
+                                                </span>
+                                                <span class="action-btn action-delete">
+                                                    <a href="">Xóa</a>
+                                                </span>
+                                            </p>
+                                        </div>
                                     </div>
 
-                                    <div class="col_full">
-                                        <span class="not-null">*</span>
-                                        <span class="icon_checkout ico-email"></span>
-                                        <input required type="email" value="" autocomplete="on" placeholder="Email"
-                                            name="customer[email]" id="email" class="text" size="30" />
-                                    </div>
-
-                                    <div class="col_full">
-                                        <span class="not-null">*</span>
-                                        <span class="icon_checkout ico-pass"></span>
-                                        <input required type="password" value="" autocomplete="false"
-                                            id="register-form-password" placeholder="Mật khẩu" name="customer[password]"
-                                            id="password" class="password text" size="30" />
-                                    </div>
-
-                                    <div class="col_full nobottommargin action">
-                                        <button class="button button-3d button-black nomargin" id="register-form-submit"
-                                            name="register-form-submit" type='submit'>Đăng ký</button>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -305,7 +342,7 @@
         </div>
     </div>
 
-    <script src="./assets/js/main.js"></script>
+
 </body>
 
 </html>
