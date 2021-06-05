@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./assets/css/grid.css">
-        <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="stylesheet" href="./assets/css/main/menu.css">
-        <link rel="stylesheet" href="./assets/css/main/footer.css">
-        <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main/menu.css">
+    <link rel="stylesheet" href="./assets/css/main/footer.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main/listproducts.css">
     <link rel="stylesheet" href="./assets/css/responsive/menuResponsive.css">
     <link rel="stylesheet" href="./assets/css/responsive/footerResponsive.css">
@@ -33,9 +33,9 @@
                 <div class="header__navbar-left ">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__icon-menu">
-                            <label for="" href="#" class="header__navbar-item-link">
+                            <button class="header__navbar-item-link" onclick="showModalMenu()">
                                 <i class="header__navbar-icon ti-menu"></i>
-                            </label>
+                            </button>
                         </li>
 
                         <li class="header__navbar-item hide-on-mobile-tablet">
@@ -105,21 +105,15 @@
                         </li>
 
                         <li class="header__navbar-item hide-on-mobile-tablet">
-                            <label for="header__menu-search" href="#" class="header__navbar-item-link">
+                            <button onclick="showModalSearch()" class="header__navbar-item-link">
                                 <i class="header__navbar-icon ti-search"></i>
-                            </label>
-                        </li>
-
-                        <li class="header__navbar-item hide-on-mobile-tablet">
-                            <a href="" class="header__navbar-item-link">
-                                <i class="header__navbar-icon ti-heart"></i>
-                            </a>
+                            </button>
                         </li>
 
                         <li class="header__navbar-item">
-                            <label for="" href="#" class="header__navbar-item-link">
+                            <button onclick="showModalCart()" class="header__navbar-item-link">
                                 <i class="header__navbar-icon ti-bag"></i>
-                            </label>
+                            </button>
                             <span class="header__navbar-item-notice">2</span>
                         </li>
                     </ul>
@@ -318,6 +312,35 @@
                             <p class="product-price-number">290,000</p>
                             <p class="currency-unit">đ</p>
                         </div>
+                    </div>
+                    <div class="product-pagination">
+                        <ul class="product-pagination-list">
+                            <li class="product-pagination-item hiden">
+                                <a href="">
+                                    <i class="ti-angle-double-left"></i>
+                                </a>
+                            </li>
+                            <li class="product-pagination-item active">
+                                <a href="">1</a>
+                            </li>
+                            <li class="product-pagination-item">
+                                <a href="">2</a>
+                            </li>
+                            <li class="product-pagination-item">
+                                <a href="">3</a>
+                            </li>
+                            <li class="product-pagination-item">
+                                ...
+                            </li>
+                            <li class="product-pagination-item">
+                                <a href="">7</a>
+                            </li>
+                            <li class="product-pagination-item">
+                                <a href="">
+                                    <i class="ti-angle-double-right"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

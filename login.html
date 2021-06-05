@@ -34,9 +34,9 @@
                 <div class="header__navbar-left ">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__icon-menu">
-                            <label for="" href="#" class="header__navbar-item-link">
+                            <button class="header__navbar-item-link" onclick="showModalMenu()">
                                 <i class="header__navbar-icon ti-menu"></i>
-                            </label>
+                            </button>
                         </li>
 
                         <li class="header__navbar-item hide-on-mobile-tablet">
@@ -106,21 +106,15 @@
                         </li>
 
                         <li class="header__navbar-item hide-on-mobile-tablet">
-                            <label for="header__menu-search" href="#" class="header__navbar-item-link">
+                            <button onclick="showModalSearch()" class="header__navbar-item-link">
                                 <i class="header__navbar-icon ti-search"></i>
-                            </label>
-                        </li>
-
-                        <li class="header__navbar-item hide-on-mobile-tablet">
-                            <a href="" class="header__navbar-item-link">
-                                <i class="header__navbar-icon ti-heart"></i>
-                            </a>
+                            </button>
                         </li>
 
                         <li class="header__navbar-item">
-                            <label for="" href="#" class="header__navbar-item-link">
+                            <button onclick="showModalCart()" class="header__navbar-item-link">
                                 <i class="header__navbar-icon ti-bag"></i>
-                            </label>
+                            </button>
                             <span class="header__navbar-item-notice">2</span>
                         </li>
                     </ul>
