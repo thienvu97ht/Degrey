@@ -91,6 +91,7 @@
   border-radius: 10px;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
+  display: block;
 }
 
 .product-item-img:hover {

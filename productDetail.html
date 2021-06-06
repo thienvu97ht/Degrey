@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEGREY</title>
+
+    <link rel="icon" href="//theme.hstatic.net/1000281824/1000704890/14/favicon.png?v=383" type="image/x-icon" />
+
+    <!-- Slide -->
+    <!-- Slide -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main/menu.css">
+    <link rel="stylesheet" href="./assets/css/main/footer.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main/productDetail.css">
+    <link rel="stylesheet" href="./assets/css/responsive/menuResponsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive/footerResponsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive/productDetailResponsive.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <!-- Nav bar -->
+            <div id="header__navbar-scroll" class="header__navbar">
+                <div class="header__navbar-left ">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__icon-menu">
+                            <button class="header__navbar-item-link" onclick="showModalMenu()">
+                                <i class="header__navbar-icon ti-menu"></i>
+                            </button>
+                        </li>
+
+                        <li class="header__navbar-item hide-on-mobile-tablet">
+                            <a href="index.html" class="header__navbar-item-link header__navbar-item-link-underline">
+                                Trang chủ
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item hide-on-mobile-tablet">
+                            <a href="listproducts.html"
+                                class="header__navbar-item-link header__navbar-item-link-underline">
+                                Sản phẩm
+                            </a>
+                            <div class="products-nav">
+                                <ul class="products-nav-list">
+                                    <li class="products-nav-item">
+                                        <a href="" class="products-nav-item-link ">TEE</a>
+                                    </li>
+                                    <li class="products-nav-item">
+                                        <a href="" class="products-nav-item-link">SWEATER</a>
+                                    </li>
+                                    <li class="products-nav-item">
+                                        <a href="" class="products-nav-item-link">HOODIE</a>
+                                    </li>
+                                    <li class="products-nav-item">
+                                        <a href="" class="products-nav-item-link">JEACKET</a>
+                                    </li>
+                                    <li class="products-nav-item">
+                                        <a href="" class="products-nav-item-link">PANTS</a>
+                                    </li>
+                                    <li class="products-nav-item">
+                                        <a href="" class="products-nav-item-link">ACCESSORIES</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="header__navbar-item hide-on-mobile-tablet">
+                            <a href="cuahang.html" class="header__navbar-item-link header__navbar-item-link-underline">
+                                Cửa hàng
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item hide-on-mobile-tablet">
+                            <a href="gioithieu.html"
+                                class="header__navbar-item-link header__navbar-item-link-underline">
+                                Giới thiệu
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__navbar-center">
+                    <a href="index.html">
+                        <img src="//theme.hstatic.net/1000281824/1000704890/14/logo.png?v=383"
+                            class="header__navbar-brand-logo" alt="">
+                    </a>
+                </div>
+
+                <div class="header__navbar-right">
+                    <ul class="header__navbar-list">
+
+                        <li class="header__navbar-item hide-on-mobile-tablet">
+                            <a href="login.html" class="header__navbar-item-link header__navbar-item-link-underline">
+                                Đăng nhập
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item hide-on-mobile-tablet">
+                            <button onclick="showModalSearch()" class="header__navbar-item-link">
+                                <i class="header__navbar-icon ti-search"></i>
+                            </button>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <button onclick="showModalCart()" class="header__navbar-item-link">
+                                <i class="header__navbar-icon ti-bag"></i>
+                            </button>
+                            <span class="header__navbar-item-notice">2</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-detail-container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-6 m-12 c-10 c-o-1 detail-product-left sv-slider-modal">
+                        <div class="owl-carousel owl-theme" data-slider-id="1">
+                            <div class="detail-product-img sv-slider-item">
+                                <img src="https://product.hstatic.net/1000281824/product/e8ab76c2-b57c-4861-836b-685b9d73dcf5_7fb1655340114ca7bf2a480718c7199d_grande.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="detail-product-img sv-slider-item">
+                                <img src="https://product.hstatic.net/1000281824/product/e2e226f4-4b09-40d9-8800-bb3e10cbf531_1173270acf634e2989cbbc9818313cb1_grande.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="detail-product-img sv-slider-item">
+                                <img src="https://product.hstatic.net/1000281824/product/9f2fee31-4ed7-45ac-b8d3-47fb3389959c_99e325a42b3b4921a05f81929bca02ef_grande.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="detail-product-img sv-slider-item">
+                                <img src="https://product.hstatic.net/1000281824/product/aa537864-cfa3-42ad-9a9f-5be1b23f4827_128761ceea22403788c0dac679bdbcf4_grande.jpeg"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <div class="owl-thumbs" data-slider-id="1">
+                        </div>
+                    </div>
+
+                    <div class="col l-6 m-12 c-10 c-o-1 detail-product-right">
+                        <div>
+                            <h1 class="product-detail-title">Sơ Mi Siết Tay Anh Xanh - STA Xanh</h1>
+                            <p class="category-product">Áo</p>
+
+                            <div class="product-detail_size-box">
+                                <p class="size-title">Kích thước</p>
+                                <div data-value="NHỎ" class="size-input-box">
+                                    <input id="swatch-0-nh" type="radio" name="option-0" value="NHỎ" checked>
+                                    <label for="swatch-0-nh">NHỎ</label>
+                                </div>
+                                <div data-value="TRUNG" class="size-input-box">
+                                    <input id="swatch-0-trung" type="radio" name="option-0" value="TRUNG">
+                                    <label for="swatch-0-trung">TRUNG</label>
+                                </div>
+                                <div data-value="LỚN" class="size-input-box">
+                                    <input id="swatch-0-lon" type="radio" name="option-0" value="LỚN">
+                                    <label for="swatch-0-lon">LỚN</label>
+                                </div>
+
+                            </div>
+
+                            <div class="quantity-product-box">
+                                <p class="size-title">Số lượng</p>
+                                <input type="text" value="1" class="quantity-input">
+                            </div>
+
+                            <p class="product-detail_price">330,000 VND</p>
+
+                            <button class="product-detail_add-btn">THÊM VÀO GIỎ</button>
+                        </div>
+
+                        <div>
+                            <div class="product_detail-description">
+                                <p class="title">Mô tả</p>
+                                <p class="description">Áo đẹp không mua phí cả một đời!</p>
+                            </div>
+
+                            <div class="free_shipping">
+                                <p>HỖ TRỢ GIAO HÀNG VỚI HOÁ ĐƠN TRÊN 150.000 VNĐ</p>
+                            </div>
+
+                            <div class="share-container">
+                                <p>Chia sẻ sản phẩm này:</p>
+                                <i class="share-icon ti-facebook" title="Không share được"></i>
+                                <i class="share-icon ti-google" title="Không share được"></i>
+                                <i class="share-icon ti-twitter-alt" title="Không share được"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="footer-top">
+                <h1 class="title-email">
+                    ĐĂNG KÝ NHẬN TIN
+                </h1>
+                <p class="email-text">Nhập địa chỉ email của bạn để nhận được tin tức mới nhất</p>
+                <div class="input-email-container">
+                    <input type="text" class="email-input" placeholder="Nhập email của bạn...">
+                    <button class="btn-subscribe">Đăng kí</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="grid wide brand-info-container">
+                    <div class="row">
+                        <div class="col l-3 m-12 c-12 text-center">
+                            <div class="brand-info ">
+                                <img src="https://file.hstatic.net/1000281824/file/1_82476e8c8d9c485ab81af7c66dc88a32.png"
+                                    class="brand-info-img" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="col l-3 m-12 c-12 mt-tablet-10 ">
+                            <div class="brand-info">
+                                <i class="brand-info-icon ti-home"></i>
+                                <p class="brand-info-text">
+                                    Địa chỉ: <br>
+                                    Q.Phú Nhuận: 43 Huỳnh Văn Bánh <br>
+                                    Q.Tân Phú: 905 Lũy Bán Bích <br>
+                                    Q.3: 224 Lý Chính Thắng <br>
+                                    Q.1: 26 Lý Tự Trọng (TNP) <br>
+                                    Q.1: 90 Lê Lai (TNP) <br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12 mt-tablet-10">
+                            <div class="brand-info">
+                                <i class="brand-info-icon ti-email"></i>
+                                <p class="brand-info-text">Email: degrey.vn@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12 mt-tablet-10">
+                            <div class="brand-info">
+                                <i class="brand-info-icon ti-mobile"></i>
+                                <p class="brand-info-text">Tel: 0336311117</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-policy">
+                    <div class="social-network-icon text-center">
+                        <i class="social-icon ti-facebook"></i>
+                        <i class="social-icon ti-instagram"></i>
+                        <i class="social-icon fab fa-youtube"></i>
+                        <i class="social-icon fab fa-tiktok"></i>
+                    </div>
+                    <div class="footer-menu">
+                        <div class="grid wide">
+                            <div class="row">
+                                <div class="col l-6 m-6 c-12 footer-menu-left">
+                                    <a href="" class="footer-menu-link">
+                                        TÌM KIẾM
+                                    </a>
+                                    <a href="" class="footer-menu-link">
+                                        GIỚI THIỆU
+                                    </a>
+                                    <a href="" class="footer-menu-link">
+                                        CHÍNH SÁCH ĐỔI TRẢ
+                                    </a>
+                                </div>
+
+                                <div class="col l-6 m-6 c-12 footer-menu-right">
+                                    <a href="" class="footer-menu-link">
+                                        CHÍNH SÁCH BẢO MẬT
+                                    </a>
+                                    <a href="" class="footer-menu-link">
+                                        ĐIỀU KHOẢN DỊCH VỤ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="designer">DuongVu.Studio©2021</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel2.thumbs@0.1.8/dist/owl.carousel2.thumbs.min.js"></script>
+    <script src="./assets//js/slide.js"></script>
+</body>
+
+</html>
