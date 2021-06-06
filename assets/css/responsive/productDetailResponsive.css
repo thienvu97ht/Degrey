@@ -10,6 +10,10 @@
   .detail-product-right {
     margin-top: 40px;
   }
+
+  .liner-or-text {
+    font-size: 2.6rem;
+  }
 }
 
 /* Tablet */
@@ -20,6 +24,10 @@
 @media (max-width: 739px) {
   .sv-slider-item img {
     height: 300px;
+  }
+
+  .liner-or-text {
+    font-size: 2rem;
   }
 }
 

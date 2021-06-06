@@ -75,18 +75,21 @@
 @media (min-width: 600px) and (max-width: 738px) {
   .product-items {
     height: 550px;
+    margin-bottom: 0px;
   }
 }
 
 @media (min-width: 370px) and (max-width: 599px) {
   .product-items {
     height: 350px;
+    margin-bottom: 0px;
   }
 }
 
 @media (max-width: 369px) {
   .product-items {
     height: 290px;
+    margin-bottom: 0px;
   }
 
   .custom-dropdown__select {
