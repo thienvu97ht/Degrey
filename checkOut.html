@@ -19,10 +19,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/main/menu.css">
     <link rel="stylesheet" href="./assets/css/main/footer.css">
-    <link rel="stylesheet" href="./assets/css/main/viewCart.css">
+    <link rel="stylesheet" href="./assets/css/main/checkout.css">
     <link rel="stylesheet" href="./assets/css/responsive/footerResponsive.css">
     <link rel="stylesheet" href="./assets/css/responsive/menuResponsive.css">
-    <link rel="stylesheet" href="./assets/css/responsive/viewCartResponsive.css">
 
 </head>
 
@@ -122,105 +121,123 @@
             </div>
         </div>
 
-        <div class="view_cart-container">
-            <div class="title">
-                <p>GIỎ HÀNG</p>
-            </div>
-
+        <div class="checkout-container">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-8 m-12 c-10 c-o-1">
-                        <table class="table table-cart">
-                            <tbody>
-                                <tr>
-                                    <th class="product">Sản phẩm</th>
-                                    <th class="qty">Số lượng</th>
-                                    <th class="price">Tổng tiền</th>
-                                    <th class="remove"> Xóa</th>
-                                </tr>
-                                <tr class="cart_item">
-                                    <th class="product">
-                                        <a href="productDetail.html">
-                                            <div class="thumb-cart">
-                                                <img src="https://product.hstatic.net/1000281824/product/f4b7d41d-dc19-4b81-8d29-1c14334ac00b_d96a30057e1a4519a210a3444b9fa548_grande.jpeg"
-                                                    alt="">
-                                                <div class="thumb-cart-info">
-                                                    <p class="name">Áo Thun Loang Tím</p>
-                                                    <p class="size">Size: Trung</p>
-                                                    <p class="price">320,000₫</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </th>
-                                    <th class="qty">
-                                        <div class="qty-number">
-                                            <input type="button" class="qtymius" value="<">
-                                            <input type="text" class="quantity" value="1">
-                                            <input type="button" class="qtyplus" value=">">
-                                        </div>
-                                    </th>
-                                    <th class="price">
-                                        <p>320,000₫</p>
-                                    </th>
-                                    <th class="remove">
-                                        <button class="btn-remove">
-                                            <i class="fas fa-trash-alt"></i>
-                                        </button>
-                                    </th>
-                                </tr>
+                    <div class="col l-7 m-12 c-10 c-o-1">
+                        <div class="checkout-container-left">
+                            <div class="checkout-box-header">
+                                <a href="index.html" class="logo_text-link">
+                                    <p class="logo-text">DEGAY VIETNAM</p>
+                                </a>
 
-                                <tr class="cart_item">
-                                    <th class="product">
-                                        <a href="productDetail.html">
-                                            <div class="thumb-cart">
-                                                <img src="https://product.hstatic.net/1000281824/product/e8ab76c2-b57c-4861-836b-685b9d73dcf5_7fb1655340114ca7bf2a480718c7199d_grande.jpeg"
-                                                    alt="">
-                                                <div class="thumb-cart-info">
-                                                    <p class="name">Sơ Mi Siết Tay Anh Xanh</p>
-                                                    <p class="size">Size: Nhỏ</p>
-                                                    <p class="price">330,000₫</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </th>
-                                    <th class="qty">
-                                        <div class="qty-number">
-                                            <input type="button" class="qtymius" value="<">
-                                            <input type="text" class="quantity" value="1">
-                                            <input type="button" class="qtyplus" value=">">
-                                        </div>
-                                    </th>
-                                    <th class="price">
-                                        <p>330,000₫</p>
-                                    </th>
-                                    <th class="remove">
-                                        <button class="btn-remove">
-                                            <i class="fas fa-trash-alt"></i>
-                                        </button>
-                                    </th>
-                                </tr>
-                            </tbody>
-                        </table>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="viewCart.html">Giỏ hàng</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        Thông tin giao hàng
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        Phương thức thanh toán
+                                    </li>
+                                </ul>
+                            </div>
 
-                        <div class="continue_shopping-btn">
-                            <a href="listproducts.html" class="continue_shopping-link">TIẾP TỤC MUA HÀNG</a>
+                            <div class="checkout-box">
+                                <p class="checkout-title">Thông tin giao hàng</p>
+                                <div class="customer_information-box">
+                                    <div class="customer_information">
+                                        <img src="https://sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png"
+                                            alt="" class="customer_ava">
+                                        <div class="customer_name">
+                                            <p class="name">Dương Đình Thiện Vũ</p>
+                                            <p class="email">thien.vu97ht123@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Input -->
+                                <div class="fieldset">
+                                    <div class="field field-show-floating-label">
+                                        <div class="field-input-wrapper field-input-wrapper-select">
+                                            <label class="field-label" for="stored_addresses">Thêm địa chỉ
+                                                mới...</label>
+                                            <select class="field-input" id="stored_addresses">
+                                                <option value="0" data-properties='{}'>Địa chỉ đã lưu trữ</option>
+                                                <option value="1045708809"
+                                                    data-properties='{"id":1045708809,"last_name":"Dương Đình Thiện","first_name":"Vũ","phone":"84981877669","address1":"Lô C - Chung cư Hiệp Bình Chánh - Đường số 23 - Phường Hiệp Bình Chánh","province":"Hồ Chí Minh","country_id":"241","province_id":"50","district":"Quận Thủ Đức","district_id":"482","wardid":null,"default":true}'
+                                                    selected>
+                                                    Dương Đình Thiện Vũ,
+                                                    84981877669,
+                                                    Lô C - Chung cư Hiệp Bình Chánh - Đường số 23 - Phường Hiệp Bình
+                                                    Chánh,
+
+                                                    Quận Thủ Đức,
+                                                    Hồ Chí Minh
+                                                    Vietnam
+                                                </option>
+
+                                                <option value="1061664078"
+                                                    data-properties='{"id":1061664078,"last_name":null,"first_name":"Dương Đình Thiện Vũ","phone":"84981877669","address1":"Lô C - Chung cư Hiệp Bình Chánh - Đường 23","province":"Hồ Chí Minh","country_id":"241","province_id":"50","district":"Quận Thủ Đức","district_id":"482","wardid":"26812","default":false}'>
+                                                    Dương Đình Thiện Vũ,
+                                                    84981877669,
+                                                    Lô C - Chung cư Hiệp Bình Chánh - Đường 23,
+                                                    Phường Hiệp Bình Chánh,
+                                                    Quận Thủ Đức,
+                                                    Hồ Chí Minh
+                                                    Vietnam
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="field field-required  ">
+                                        <div class="field-input-wrapper">
+                                            <label class="field-label" for="billing_address_full_name">Họ và tên</label>
+                                            <input placeholder="Họ và tên" autocapitalize="off" spellcheck="false"
+                                                class="field-input" size="30" type="text" id="billing_address_full_name"
+                                                name="billing_address[full_name]" value="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="field field-required   ">
+                                        <div class="field-input-wrapper">
+                                            <label class="field-label" for="billing_address_phone">Số điện thoại</label>
+                                            <input placeholder="Số điện thoại" autocapitalize="off" spellcheck="false"
+                                                class="field-input" size="30" maxlength="15" type="tel"
+                                                id="billing_address_phone" name="billing_address[phone]" value="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="field field-required  ">
+                                        <div class="field-input-wrapper">
+                                            <label class="field-label" for="billing_address_address1">Địa chỉ</label>
+                                            <input placeholder="Địa chỉ" autocapitalize="off" spellcheck="false"
+                                                class="field-input" size="30" type="text" id="billing_address_address1"
+                                                name="billing_address[address1]" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkout-box-step">
+                                <div class="back-to-cart">
+                                    <a href="viewCart.html">Giở hàng</a>
+                                </div>
+
+                                <div class="checkout-step2">
+                                    <a href="finishCheckout.html">
+                                        Hoàn tất đơn hàng
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
 
-                    <div class="col l-4 m-12 c-10 c-o-1">
-                        <div class="total_cart">
-                            <div class="sub_total">
-                                <p>Tổng tiền</p>
-                                <p>650,000₫</p>
-                            </div>
-                            <div class="final_total">
-                                <a href="checkOut.html" class="update_cart">Thanh toán</a>
-                            </div>
-                        </div>
+                    <div class="col l-5 m-12 c-10 c-o-1">
 
-                        <label class="control-label" for="CartSpecialInstructions">Ghi chú</label>
-                        <textarea name="note" class="form-control" placeholder="Bạn muốn mô tả rõ hơn về đơn hàng..."
-                            id="CartSpecialInstructions"></textarea>
                     </div>
                 </div>
             </div>
