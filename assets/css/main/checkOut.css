@@ -1,5 +1,5 @@
 .checkout-container {
-  margin-top: 100px;
+  margin-top: 140px;
 }
 
 .checkout-container-left {
@@ -15,6 +15,10 @@
   font-size: 3rem;
   text-decoration: none;
   color: #000;
+}
+
+.logo_text-link p {
+  padding: 0 40px;
 }
 
 .breadcrumb {
@@ -227,4 +231,134 @@ option {
   line-height: 55px;
   padding: 20px;
   border-radius: 10px;
+}
+
+/* Checkout right */
+.checkout-container-right {
+  padding: 50px 10px 0 10px;
+}
+
+.checkout-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.checkout-product-name {
+  display: flex;
+}
+
+.checkout-product-img-box {
+  position: relative;
+}
+
+.checkout-product-img {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.product-qty {
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 5px 8px;
+  border-radius: 50%;
+  background-color: rgba(153, 153, 153, 0.9);
+  color: #fff;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  z-index: 2;
+}
+
+.checkout-product-price p {
+  font-size: 1.4rem;
+}
+
+.checkout-product-name-box {
+  margin-left: 20px;
+}
+
+.checkout-product-name-box p {
+  font-size: 1.4rem;
+}
+
+/* Discount */
+
+.discout-form {
+  display: flex;
+}
+
+.checkout-product-discount {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.4rem;
+}
+
+.input-discount {
+  padding: 12px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.input-discount:focus {
+  box-shadow: 0 0 0 2px #338dbc;
+  outline: none;
+}
+
+.btn-discount {
+  padding: 12px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+  background: #c8c8c8;
+  color: #fff;
+}
+
+.checkout-product-total-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+.price-title,
+.ship-title {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.price,
+.ship {
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 500;
+  text-align: right;
+}
+
+.checkout-product-total-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.checkout-product-total-bottom .title {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.checkout-product-total-bottom .total-price {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 500;
+  text-align: right;
 }
