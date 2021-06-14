@@ -3,8 +3,9 @@
 
 /* Mobile & Tablet */
 @media (max-width: 1023px) {
-  .log-in-sign-up-container {
-    margin-top: 40px;
+  .notfound-img {
+    height: 300px;
+    width: 300px;
   }
 }
 
@@ -14,12 +15,8 @@
 
 /* Mobile */
 @media (max-width: 739px) {
-  .content-cus-form {
-    width: 340px;
-  }
-
-  .login-socia-title {
-    margin-top: 40px;
+  .notfound_container {
+    margin-top: 90px;
   }
 }
 
@@ -30,7 +27,8 @@
 }
 
 @media (max-width: 369px) {
-  .content-cus-form {
-    width: 100%;
+  .notfound-img {
+    height: 200px;
+    width: 200px;
   }
 }

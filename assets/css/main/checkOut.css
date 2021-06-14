@@ -235,7 +235,7 @@ option {
 
 /* Checkout right */
 .checkout-container-right {
-  padding: 50px 10px 0 10px;
+  padding: 0 10px;
 }
 
 .checkout-product {

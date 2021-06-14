@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEGREY</title>
+
+    <link rel="icon" href="//theme.hstatic.net/1000281824/1000704890/14/favicon.png?v=383" type="image/x-icon" />
+
+    <!-- Slide -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main/menu.css">
+    <link rel="stylesheet" href="./assets/css/main/footer.css">
+    <link rel="stylesheet" href="./assets/css/main/oderSuccess.css">
+    <link rel="stylesheet" href="./assets/css/responsive/footerResponsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive/menuResponsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive/oderSuccessResponsive.css">
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <!-- Nav bar -->
+            <div id="header__navbar-scroll" class="header__navbar">
+                <div class="header__navbar-left ">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__icon-menu">
+                            <button class="header__navbar-item-link" onclick="showModalMenu()">
+                                <i class="header__navbar-icon ti-menu"></i>
+                            </button>
+                        </li>
+
+                        <li class="header__navbar-item hide-on-mobile-tablet">
+                            <a href="index.html" class="header__navbar-item-link header__navbar-item-link-underline">
+                                Trang chủ
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item hide-on-mobile-tablet">
+                            <a href="listproducts.html"
+                                class="header__navbar-item-link header__navbar-item-link-underline">
+                                Sản phẩm
+                            </a>
+                            <div class="products-nav">
+                                <ul class="products-nav-list">
+                                    <li class="products-nav-item">
+                                        <a href="" class="products-nav-item-link ">TEE</a>
+                                    </li>
+                                    <li class="products-nav-item">
+                                        <a href="" class="products-nav-item-link">SWEATER</a>
+                                    </li>
+                                    <li class="products-nav-item">
+                                        <a href="" class="products-nav-item-link">HOODIE</a>
+                                    </li>
+                                    <li class="products-nav-item">
+                                        <a href="" class="products-nav-item-link">JEACKET</a>
+                                    </li>
+                                    <li class="products-nav-item">
+                                        <a href="" class="products-nav-item-link">PANTS</a>
+                                    </li>
+                                    <li class="products-nav-item">
+                                        <a href="" class="products-nav-item-link">ACCESSORIES</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="header__navbar-item hide-on-mobile-tablet">
+                            <a href="cuahang.html" class="header__navbar-item-link header__navbar-item-link-underline">
+                                Cửa hàng
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item hide-on-mobile-tablet">
+                            <a href="gioithieu.html"
+                                class="header__navbar-item-link header__navbar-item-link-underline">
+                                Giới thiệu
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__navbar-center">
+                    <a href="index.html">
+                        <img src="//theme.hstatic.net/1000281824/1000704890/14/logo.png?v=383"
+                            class="header__navbar-brand-logo" alt="">
+                    </a>
+                </div>
+
+                <div class="header__navbar-right">
+                    <ul class="header__navbar-list">
+
+                        <li class="header__navbar-item hide-on-mobile-tablet">
+                            <a href="login.html" class="header__navbar-item-link header__navbar-item-link-underline">
+                                Đăng nhập
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-item hide-on-mobile-tablet">
+                            <button onclick="showModalSearch()" class="header__navbar-item-link">
+                                <i class="header__navbar-icon ti-search"></i>
+                            </button>
+                        </li>
+
+                        <li class="header__navbar-item">
+                            <button onclick="showModalCart()" class="header__navbar-item-link">
+                                <i class="header__navbar-icon ti-bag"></i>
+                            </button>
+                            <span class="header__navbar-item-notice">2</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="oder_success-container">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png" alt="" class="oder_success-img">
+            <p class="oder_success-text">Đơn hàng của bạn đã được đặt thành công, chúng tôi sẽ gửi hàng cho bạn sau 1000 năm nữa!</p>
+            <a href="!#" class="oder_success-link">Về trang chủ
+                <i class="oder_success-icon ti-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="footer">
+            <div class="footer-top">
+                <h1 class="title-email">
+                    ĐĂNG KÝ NHẬN TIN
+                </h1>
+                <p class="email-text">Nhập địa chỉ email của bạn để nhận được tin tức mới nhất</p>
+                <div class="input-email-container">
+                    <input type="text" class="email-input" placeholder="Nhập email của bạn...">
+                    <button class="btn-subscribe">Đăng kí</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="grid wide brand-info-container">
+                    <div class="row">
+                        <div class="col l-3 m-12 c-12 text-center">
+                            <div class="brand-info ">
+                                <img src="https://file.hstatic.net/1000281824/file/1_82476e8c8d9c485ab81af7c66dc88a32.png"
+                                    class="brand-info-img" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="col l-3 m-12 c-12 mt-tablet-10 ">
+                            <div class="brand-info">
+                                <i class="brand-info-icon ti-home"></i>
+                                <p class="brand-info-text">
+                                    Địa chỉ: <br>
+                                    Q.Phú Nhuận: 43 Huỳnh Văn Bánh <br>
+                                    Q.Tân Phú: 905 Lũy Bán Bích <br>
+                                    Q.3: 224 Lý Chính Thắng <br>
+                                    Q.1: 26 Lý Tự Trọng (TNP) <br>
+                                    Q.1: 90 Lê Lai (TNP) <br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12 mt-tablet-10">
+                            <div class="brand-info">
+                                <i class="brand-info-icon ti-email"></i>
+                                <p class="brand-info-text">Email: degrey.vn@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-12 c-12 mt-tablet-10">
+                            <div class="brand-info">
+                                <i class="brand-info-icon ti-mobile"></i>
+                                <p class="brand-info-text">Tel: 0336311117</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brand-policy">
+                    <div class="social-network-icon text-center">
+                        <i class="social-icon ti-facebook"></i>
+                        <i class="social-icon ti-instagram"></i>
+                        <i class="social-icon fab fa-youtube"></i>
+                        <i class="social-icon fab fa-tiktok"></i>
+                    </div>
+                    <div class="footer-menu">
+                        <div class="grid wide">
+                            <div class="row">
+                                <div class="col l-6 m-6 c-12 footer-menu-left">
+                                    <a href="" class="footer-menu-link">
+                                        TÌM KIẾM
+                                    </a>
+                                    <a href="" class="footer-menu-link">
+                                        GIỚI THIỆU
+                                    </a>
+                                    <a href="" class="footer-menu-link">
+                                        CHÍNH SÁCH ĐỔI TRẢ
+                                    </a>
+                                </div>
+
+                                <div class="col l-6 m-6 c-12 footer-menu-right">
+                                    <a href="" class="footer-menu-link">
+                                        CHÍNH SÁCH BẢO MẬT
+                                    </a>
+                                    <a href="" class="footer-menu-link">
+                                        ĐIỀU KHOẢN DỊCH VỤ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="designer">DuongVu.Studio©2021</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
