@@ -12,17 +12,33 @@ function redirectAccount() {
   window.location.href = "account.html";
 }
 
-var string1 = "Học Javascript tại F8";
-var string2 = "Javascrip";
+var products = [
+  {
+    id: "1",
+    name: "Vũ",
+  },
+  {
+    id: "2",
+    name: "Phong",
+  },
+  {
+    id: "3",
+    name: "Tuấn",
+  },
+  {
+    id: "4",
+    name: "Hạnh",
+  },
+];
 
-console.log(string1.indexOf(string2));
+var productsInCart = {
+  productId: "3",
+};
 
-function stringInString(needle, haystack) {
-  var result =
-    haystack.indexOf(needle) != -1 &&
-    typeof needle == "string" &&
-    typeof haystack == "string";
-  console.log(result);
+function findProductById(productsInCart, products) {
+  var result = [];
+  
+  return result;
 }
 
-stringInString(string2, string1);
+console.log(findProductById(productsInCart, products));
